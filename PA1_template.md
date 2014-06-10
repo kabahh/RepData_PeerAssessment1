@@ -1,5 +1,5 @@
 Peer Assessment - Project 1
-===============================================
+================================================
 ## Loading and preprocessing the data
 
 1. Load the data (i.e. read.csv())  
@@ -14,6 +14,17 @@ Peer Assessment - Project 1
 	library(lattice)
 	setwd(getwd())
 	data <- read.csv("activity.csv", header = T)
+	```
+	
+	```
+	## Warning: cannot open file 'activity.csv': No such file or directory
+	```
+	
+	```
+	## Error: cannot open the connection
+	```
+	
+	```r
 	dim(data)
 	```
 	
