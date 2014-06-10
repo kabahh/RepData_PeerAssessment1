@@ -35,7 +35,7 @@ data1 <- aggregate(steps ~ date, data = data, sum)
 ```
 
 1. Make a histogram of the total number of steps taken each day
-	```{r histoTotalSteps,fig.height=4}
+	```{r histoTotalStepsplot1,fig.height=4}
 	hist(data1$steps, 20, main="Histogram of Total Number of Steps Taken Each Day", 
 	xlab="Total Number of Steps")
 	```
@@ -61,7 +61,7 @@ data1 <- aggregate(steps ~ date, data = data, sum)
 	data2 <- na.omit(data)
 	```
 	From here, we can take the aggregate of the data at the interval level and make our plot   
-	```{r lineAvgSteps}
+	```{r lineAvgStepsplot2}
 	data3 <- aggregate(steps ~ interval, data = data2, mean)
 	plot(data3$interval, data3$steps, type = "l", xlab="Time Interval", ylab="Average Number of Steps",
 	main="Average Number of Steps Taken Per Interval Across All Days
@@ -119,7 +119,7 @@ Note that there are a number of days/intervals where there are missing values (c
 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. 
 
 	First we must recreate the aggregate data at the steps level. Once that is completed, we can use that dataset to create the histogram of interest.  
-	```{r histoImputed,fig.height=4}
+	```{r histoImputedplot3,fig.height=4}
 	data9 <- aggregate(stepComp ~ date, data = data8, sum)
 	hist(data9$stepComp, 20, main="Histogram of Total Number of Steps Taken Each Day
 	Note: Missing Values Imputed as Mean Number of Steps Per Interval", 
@@ -164,7 +164,7 @@ For this part the weekdays() function may be of some help here. Use the dataset 
 
 	Using the data we created above, we can create a comparison plot for activity factored by weekend status.  
 	
-	```{r CompLineSteps}
+	```{r CompLineStepsplot4}
 	data11 <- aggregate(stepComp ~ wdfactor+interval, data = data10, mean)
 	xyplot(data11$stepComp ~ data11$interval | data11$wdfactor, layout =c(1,2), type='l', lwd=2, 
 	main="Comparison of Average Steps Take by Weekend Status

@@ -72,7 +72,7 @@ data1 <- aggregate(steps ~ date, data = data, sum)
 	xlab="Total Number of Steps")
 	```
 	
-	![plot of chunk histoTotalSteps](figure/histoTotalSteps.png) 
+	![plot of chunk histoTotalStepsplot1](figure/histoTotalStepsplot1.png) 
 
 2. Calculate and report the mean and median total number of steps taken per day  
 	The mean total number of steps taken per day is:
@@ -126,7 +126,7 @@ data1 <- aggregate(steps ~ date, data = data, sum)
 	Note: Missing Step Values Excluded from Calculation")
 	```
 	
-	![plot of chunk lineAvgSteps](figure/lineAvgSteps.png) 
+	![plot of chunk lineAvgStepsplot2](figure/lineAvgStepsplot2.png) 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?  
 	The 5-minute interval that contains the maximum number of average steps is:
 	
@@ -211,7 +211,7 @@ Note that there are a number of days/intervals where there are missing values (c
 	xlab="Total Number of Steps", ylim=c(0,20))  
 	```
 	
-	![plot of chunk histoImputed](figure/histoImputed.png) 
+	![plot of chunk histoImputedplot3](figure/histoImputedplot3.png) 
 	
 	The new mean total number of steps taken per day for the imputed data is:
 	
@@ -283,4 +283,4 @@ For this part the weekdays() function may be of some help here. Use the dataset 
 	xlab="Time Interval", ylab="Average Steps Taken")
 	```
 	
-	![plot of chunk CompLineSteps](figure/CompLineSteps.png) 
+	![plot of chunk CompLineStepsplot4](figure/CompLineStepsplot4.png) 
