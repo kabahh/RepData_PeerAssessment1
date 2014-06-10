@@ -273,5 +273,3 @@ For this part the weekdays() function may be of some help here. Use the dataset 
 	```
 	
 	![plot of chunk CompLineSteps](figure/CompLineSteps.png) 
-
-

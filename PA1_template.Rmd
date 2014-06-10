@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Peer Assessment - Project 1
 ===============================================
 ## Loading and preprocessing the data
@@ -172,4 +171,3 @@ For this part the weekdays() function may be of some help here. Use the dataset 
 	Note: Missing Values Imputed as Mean Number of Steps Per Interval", 
 	xlab="Time Interval", ylab="Average Steps Taken")
 	```
->>>>>>> dc20c7c4e92aea6af318a611e2669d5b9c6cbfaf
