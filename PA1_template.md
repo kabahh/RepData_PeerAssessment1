@@ -12,7 +12,7 @@ Peer Assessment - Project 1
 	library(knitr)
 	library(plyr)
 	library(lattice)
-	setwd(getwd())
+	setwd("~/Training/Data Scientist's Toolbox/RepRes")
 	data <- read.csv("activity.csv", header = T)
 	```
 	
